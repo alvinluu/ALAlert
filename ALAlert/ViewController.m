@@ -26,17 +26,17 @@
 //    [popAlert showInView:self.view Title:@"Hello World!" Message:@"You have the best alert!!!"];
 }
 - (IBAction)simplyAlert:(id)sender {
-    [popAlert showInView:self.view Title:@"Hello World" Message:@"You have the best alert!!!"];
+    [popAlert showInView:self.view title:@"Hello World" message:@"You have the best alert!!!"];
 }
 - (IBAction)twoBtnAlert:(id)sender {
-    [popAlert showInView:self.view Title:@"Hello Big World" Message:@"This is your very best alert!!\n\nGoGoGo!!!" Buttons:@[@"Back",@"Accept Me Now"]];
+    [popAlert showInView:self.view title:@"Hello Big World" message:@"This is your very best alert!!\n\nGoGoGo!!!" buttons:@[@"Back",@"Accept Me Now"]];
     
 }
 - (IBAction)threeBtnAlert:(id)sender {
-    [popAlert showInView:self.view Title:@"Hello Big World" Message:@"This is your very best alert!!\n\nGoGoGo!!!" Buttons:@[@"Back",@"Reset",@"Accept"]];
+    [popAlert showInView:self.view title:@"Hello Big World" message:@"This is your very best alert!!\n\nGoGoGo!!!" buttons:@[@"Back",@"Reset",@"Accept"]];
     
 }
-- (void)buttonClicked:(id)sender Title:(NSString *)title {
+- (void)buttonClicked:(id)sender title:(NSString *)title {
     NSLog(@"backfromalert");
     if ([sender isKindOfClass:[UIButton class]]) {
         UIButton* btn = (UIButton*)sender;

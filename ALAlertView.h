@@ -25,11 +25,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnOne;
 
 -(id)init;
--(void)showInView:(UIView*)sourceView Title:(NSString*)title Message:(NSString*)message;
--(void)showInView:(UIView*)sourceView Title:(NSString*)title Message:(NSString*)message Buttons:(NSArray*)buttonNames;
+-(void)showInView:(UIView*)sourceView title:(NSString*)title message:(NSString*)message;
+-(void)showInView:(UIView*)sourceView title:(NSString*)title message:(NSString*)message buttons:(NSArray*)buttonNames;
 @end
 
 
 @protocol ALAlertDelegate <NSObject>
--(void)buttonClicked:(id)sender Title:(NSString*)title;
+-(void)buttonClicked:(id)sender title:(NSString*)title;
 @end

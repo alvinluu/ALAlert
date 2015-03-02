@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
@@ -79,7 +80,7 @@
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="Vl1-RP-jij"/>
+                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="GT5-Ca-V3L"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ui-CR-SbF">
@@ -103,7 +104,7 @@
                                         </mask>
                                     </variation>
                                     <connections>
-                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="fVw-mG-3vD"/>
+                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="USn-uI-bN7"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoL-F4-Oyg">
@@ -131,7 +132,7 @@
                                         </mask>
                                     </variation>
                                     <connections>
-                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="vrA-wE-oaW"/>
+                                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="c8t-o0-KP1"/>
                                     </connections>
                                 </button>
                             </subviews>

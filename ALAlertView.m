@@ -38,12 +38,12 @@
     }
     return self;
 }
--(void)showInView:(UIView *)sourceView Title:(NSString *)title Message:(NSString *)message
+-(void)showInView:(UIView *)sourceView title:(NSString *)title message:(NSString *)message
 {
-    [self showInView:sourceView Title:title Message:message Buttons:nil];
+    [self showInView:sourceView title:title message:message buttons:nil];
 }
 
--(void)showInView:(UIView *)sourceView Title:(NSString *)title Message:(NSString *)message Buttons:(NSArray *)buttonNames
+-(void)showInView:(UIView *)sourceView title:(NSString *)title message:(NSString *)message buttons:(NSArray *)buttonNames
 {
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -102,7 +102,7 @@
         } completion:^(BOOL finished) {
             btn.alpha = 1;
             id<ALAlertDelegate> strongDelegate = self.delegate;
-            [strongDelegate buttonClicked:sender Title:headerLabel.text];
+            [strongDelegate buttonClicked:sender title:headerLabel.text];
             [self removeSelfAnimate];
         }];
     }
