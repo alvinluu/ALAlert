@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU6-6J-o63">
+                                <rect key="frame" x="259" y="157" width="83" height="30"/>
+                                <state key="normal" title="Simply Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="simplyAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2i6-rn-NgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO2-Om-XiH">
+                                <rect key="frame" x="240" y="225" width="122" height="30"/>
+                                <state key="normal" title="Two Buttons Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twoBtnAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZFx-zF-Udp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysk-8p-3cL">
+                                <rect key="frame" x="279" y="68" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg4-lZ-fi3">
+                                <rect key="frame" x="234" y="294" width="133" height="30"/>
+                                <state key="normal" title="Three Buttons Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="threeBtnAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BUC-l5-Fna"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sg4-lZ-fi3" firstAttribute="top" secondItem="hO2-Om-XiH" secondAttribute="bottom" constant="39" id="0q8-c5-cPI"/>
+                            <constraint firstItem="eU6-6J-o63" firstAttribute="centerX" secondItem="hO2-Om-XiH" secondAttribute="centerX" id="FNL-xb-r26"/>
+                            <constraint firstAttribute="centerX" secondItem="eU6-6J-o63" secondAttribute="centerX" id="UkN-jY-6cj"/>
+                            <constraint firstItem="eU6-6J-o63" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="137" id="cve-RL-fBt"/>
+                            <constraint firstItem="sg4-lZ-fi3" firstAttribute="centerX" secondItem="hO2-Om-XiH" secondAttribute="centerX" constant="-1" id="jwL-cl-OrS"/>
+                            <constraint firstItem="ysk-8p-3cL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="48" id="mWO-MP-EV2"/>
+                            <constraint firstItem="hO2-Om-XiH" firstAttribute="top" secondItem="eU6-6J-o63" secondAttribute="bottom" constant="38" id="noZ-Bp-n8d"/>
+                            <constraint firstAttribute="centerX" secondItem="ysk-8p-3cL" secondAttribute="centerX" id="p4M-Du-H0N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ysk-8p-3cL" id="0px-eJ-qkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
