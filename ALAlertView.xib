@@ -29,8 +29,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-Eh-yKQ" userLabel="Body">
                             <rect key="frame" x="10" y="44" width="280" height="202"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jp-8a-3oN">
-                                    <rect key="frame" x="119" y="91" width="42" height="21"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="0Jp-8a-3oN">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="202"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -38,8 +38,12 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstAttribute="bottom" secondItem="0Jp-8a-3oN" secondAttribute="bottom" id="9gY-W8-Gqu"/>
                                 <constraint firstAttribute="centerX" secondItem="0Jp-8a-3oN" secondAttribute="centerX" id="Dmw-Lj-S2N"/>
                                 <constraint firstAttribute="centerY" secondItem="0Jp-8a-3oN" secondAttribute="centerY" id="FNI-dI-vjh"/>
+                                <constraint firstAttribute="trailing" secondItem="0Jp-8a-3oN" secondAttribute="trailing" id="PM9-em-x6j"/>
+                                <constraint firstItem="0Jp-8a-3oN" firstAttribute="top" secondItem="xdW-Eh-yKQ" secondAttribute="top" id="sS8-B2-mis"/>
+                                <constraint firstItem="0Jp-8a-3oN" firstAttribute="leading" secondItem="xdW-Eh-yKQ" secondAttribute="leading" id="syH-mO-lGC"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yT1-vg-rBN" userLabel="Header">

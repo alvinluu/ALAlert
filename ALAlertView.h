@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnThree;
 @property (weak, nonatomic) IBOutlet UIButton *btnOne;
 
+-(id)init;
 -(void)showInView:(UIView*)sourceView Title:(NSString*)title Message:(NSString*)message;
 -(void)showInView:(UIView*)sourceView Title:(NSString*)title Message:(NSString*)message Buttons:(NSArray*)buttonNames;
 @end

@@ -20,6 +20,15 @@
 @synthesize popView;
 @synthesize btnTwo, btnThree, btnOne;
 
+-(id)init
+{
+    self = [super initWithNibName:@"ALAlertView" bundle:nil];
+    
+    if (self) {
+        //do something
+    }
+    return self;
+}
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

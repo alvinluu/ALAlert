@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    popAlert = [[ALAlertView alloc] initWithNibName:@"ALAlertView" bundle:nil];
+    popAlert = [[ALAlertView alloc] init];
     popAlert.delegate = self;
     
 //    [popAlert showInView:self.view Title:@"Hello World!" Message:@"You have the best alert!!!"];
