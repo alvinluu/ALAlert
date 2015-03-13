@@ -6,5 +6,16 @@ ALAlert can post up to 3 buttons for in ObjC. If button name is asigned to nil, 
 How to use:
 import "ALAlertView.h"
 
-[[ALAlert alloc] init] showInView:self.view title:@"Your Title" message:@"Your Message"];
+declare ALAlertView object in header file
+ALAlertView *popAlert;
+
+allocate object in ViewDidLoad
+popAlert = [[ALAlertView alloc] init];
+
+show your alert
+[popAlert showInView:self.view title:@"Your Title" message:@"Your Message"];
+
+show with custom button's name
+
+[popAlert showInView:self.view title:@"Your Title" message:@"Your Message" buttons:[@"Cancel", @"OK"]];
 
